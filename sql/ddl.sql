@@ -1,3 +1,6 @@
+IF NOT (EXISTS(SELECT * FROM host_usage))
+BEGIN
+
 CREATE TABLE PUBLIC.host_usage 
   ( 
      "timestamp"    TIMESTAMP NOT NULL, 
@@ -10,6 +13,10 @@ CREATE TABLE PUBLIC.host_usage
      CONSTRAINT host_usage_host_info_fk FOREIGN KEY (host_id) REFERENCES 
      host_info(id) 
   );
+END
+
+IF NOT (EXISTS (SELECT * FROM host_info))
+BEGIN
 
 CREATE TABLE PUBLIC.host_info 
   ( 
@@ -25,3 +32,4 @@ CREATE TABLE PUBLIC.host_info
      CONSTRAINT host_info_pk PRIMARY KEY (id), 
      CONSTRAINT host_info_un UNIQUE (hostname) 
   );
+END
