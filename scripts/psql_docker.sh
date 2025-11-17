@@ -32,7 +32,7 @@ case $cmd in
   # Create container
 	docker volume create pgdata
   # Start the container
-	docker run jrvs-psql
+	docker run -e password=$db_password -e user=$db_username jrvs-psql
   # Make sure you understand what's `$?`
 	exit $?
 	;;
