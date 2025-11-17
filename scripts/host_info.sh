@@ -29,6 +29,6 @@ disk_available=$(df -BM | awk '{Total=Total+$4} END{print Total}')
 
 insert_statement="INSERT INTO host_info (id, hostname, cpu_number, cpu_architecture, cpu_model, cpu_mhz, l2_cache, "timestamp", total_mem) VALUES(3, $3, $cpu_number, $cpu_architecture, $cpu_model, $cpu_mhz, $l2_cache, $timestamp, $total_mem);"
 
-PGPASSWORD="rocky1234"
+PGPASSWORD=$5
 
-psql -h localhost -p $2 -U $4 -d $3 -c $insert_statement
+psql -h $1 -p $2 -U $4 -d $3 -c $insert_statement
