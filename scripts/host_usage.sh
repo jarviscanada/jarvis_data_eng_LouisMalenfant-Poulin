@@ -18,8 +18,8 @@ cpu_architecture=$(echo "$lscpu_out" | egrep "^Architecture" | awk '{print $2}' 
 cpu_model=$(echo "$lscpu_out" | egrep "Model:" | awk '{print $2}' | xargs )
 cpu_mhz=$(echo "$lscpu_out" | egrep "Model name:" | awk '{print $7}' | xargs )
 l2_cache=$(echo "$lscpu_out" | egrep "L2" | awk '{print $3,$4}' )
-total_mem= $(vmstat --unit M | tail -1 | awk '{print $4}')
-timestamp=date +"%Y-%m-%d %H:%M:%S" # current timestamp in `2019-11-26 14:40:19` format; use `date` cmd
+total_mem= $(vmstat --unit M | tail -1 | awk '{print $4}'| echo)
+timestamp=$(date  "+%Y-%m-%d %H:%M:%S")
 
 # usage info
 memory_free=$(vmstat --unit M | tail -1 | awk -v col="4" '{print $col}')
@@ -33,4 +33,4 @@ insert_statement="INSERT INTO host_usage ('timestamp', host_id, memory_free, cpu
 
 PGPASSWORD=$5
 
-psql -h localhost -p $2 -U $4 -d $3 -c $insert_statement
+psql -h localhost -p $2 -U $4 -d $3 -c "$insert_statement"
