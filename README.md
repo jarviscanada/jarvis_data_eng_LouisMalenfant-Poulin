@@ -1,11 +1,14 @@
-# Linux Cluster Monitoring Agent
-## Introduction
+# Introduction
 
-This tool is a tool that allows a user to monitor different values about their computer. It checks in real time for the hardware of the computer through commands such as lscpu and crontabs to always be up to date on changes that might have been made and stores it inside a psql database for future use. The database runs in a docker container.
+# SQL Queries
 
-## Architecture and Design
+###### Table Setup (DDL)
+
+###### Question 1: Show all members 
 
 
+
+###### Question 2: Lorem ipsum...
 
 
 
