@@ -1,4 +1,7 @@
-#create the tables 
+# Introduction
+This is a prject hat operates different things on sql databses such as joins, over, group by and mahy more.
+
+# create the tables 
 ```sql
 CREATE TABLE cd.members
     (
