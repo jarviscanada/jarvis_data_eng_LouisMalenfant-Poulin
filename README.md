@@ -33,4 +33,4 @@ Project source code: [https://github.com/jarviscanada/jarvis_data_eng_LouisMalen
 
 ## Miscellaneous
 - Cybersecurity club leader
-- Event organiser
+- Event organiser at my university
