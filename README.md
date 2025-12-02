@@ -1,6 +1,6 @@
 # Louis Malenfant-Poulin . Jarvis Consulting
 
-I am Louis Malenfant-Poulin, a recent graduate in computer science from Université de Montréal. My experience in competitions such as the ICPC led me to learn much more about algorithms and optimization. This competition also allowed me to practice teamwork under pressure, as solving multiple very hard programming problems under a very short amount of time with two other people required a lot of cooperation. I also led a cybersecurity club where I learned to teach and to lead others in competitions in a domain where understanding is always more important than knowing. Finally, I always participate in computer science events like the advent of code, where I can keep practicing my abilities in Python, C, C++ and many more languages.
+Je suis Louis Malenfant-Poulin, un récent diplômé en informatique de l'Université de Montréal. Mon expérience dans des compétitions comme l'ICPC m'a permis d'en apprendre beaucoup plus sur les algorithmes et l'optimisation. Cette compétition m'a aussi permis de m'entraîner au travail d'équipe sous pression, car résoudre plusieurs problèmes de programmation très difficiles en très peu de temps avec deux autres personnes demandait beaucoup de coopération. J'ai aussi animé un club de cybersécurité où j'ai appris à enseigner et à diriger d'autres personnes dans des compétitions dans un domaine où la compréhension est toujours plus importante que la connaissance. Enfin, je participe toujours à des événements en informatique comme l'avènement du code, où je peux continuer à m'entraîner en Python, C, C++ et bien d'autres langages.
 
 ## Skills
 
@@ -15,28 +15,28 @@ I am Louis Malenfant-Poulin, a recent graduate in computer science from Universi
 Project source code: [https://github.com/jarviscanada/jarvis_data_eng_LouisMalenfant-Poulin](https://github.com/jarviscanada/jarvis_data_eng_LouisMalenfant-Poulin)
 
 
-**Cluster Monitor** [[GitHub](https://github.com/jarviscanada/jarvis_data_eng_LouisMalenfant-Poulin/tree/master/scripts)]: Implemented a Cluster monitoring program that allows the user to see information on their machine's statistics and stores them. This project also allows the user to obtain information on their computer's usage, such as memory free, I/O and more by setting up a cronjob that looks it up every minute. This project used shell commands through shell files that called for the execution of information gathering functions such as lscpu and stored them in a sql database.
+**Cluster Monitor** [[GitHub](https://github.com/jarviscanada/jarvis_data_eng_LouisMalenfant-Poulin/tree/master/scripts)]:  J'ai mis en place d'un programme de surveillance de cluster qui permet à l'utilisateur de voir les informations sur les statistiques de sa machine et de les stocker. Ce projet permet également à l'utilisateur d'obtenir des informations sur l'utilisation de son ordinateur, telles que la mémoire libre, l'E/S et plus encore, en configurant un cronjob qui le consulte toutes les minutes. Ce projet utilisait des commandes shell via des fichiers shell qui demandaient l'exécution de fonctions de collecte d'informations telles que lscpu et les stockaient dans une base de données SQL. 
 
 
 ## Highlighted Projects
-**Complex raytracer**: Created a functionning raytracer that rendered images with both precision and speed. This raytracer was implemented in C++ and used OpenGL. It implemented various types of collisions and refrations with a variety of surfaces. Optimization was done through AABBs that helped speed up the raytracing by minimising the checks. This raytracer was also able to simulate collisions with different types of surfaces such as liquids and smoke. 
+**Complex raytracer**: J'ai créé un raytracer fonctionnel qui rendait les images avec précision et rapidité. Ce traceur de rayons était implémenté en C++ et utilisait OpenGL. Il a mis en uvre divers types de collisions et de réfractions avec une variété de surfaces. L'optimisation a été réalisée via des AABB qui ont permis d'accélérer le lancer de rayons en minimisant les contrôles. Ce raytraque pouvait également simuler des collisions avec différents types de surfaces telles que les liquides et la fumée. 
 
-**Machine learning project**: Developped a machine learning model that could take as input information about a building and predict climatisation usage throughout. This project involved the use of lstm as the information was sorted through time and the loss of order would have rendered the data unreliable. This project also involved gathering and treating large datasets such as normalizing some datapoints and transforming times so that they would be perceived as circular by the program.
+**Machine learning project**: J'ai développé un modèle d'apprentissage automatique capable de prendre en entrée des informations sur un bâtiment et de prédire l'utilisation de la climatisation tout au long du bâtiment. Ce projet impliquait l'utilisation de lstm car les informations étaient triées dans le temps et la perte d'ordre aurait rendu les données peu fiables. Ce projet a également consisté à collecter et traiter de grands ensembles de données, comme la normalisation de certains points de données et la transformation des temps afin qu'ils soient perçus comme circulaires par le programme. 
 
 
 ## Professional Experiences
 
-**Jarvis data engineer, Jarvis (2025)**: Worked in an Agile environnement to implement various data gathering tools and to develop my skills in SQL, Shell and more. Implemented a dockerized version of a computer system analytics tools that gathered information continuously and automatically.
+**Jarvis data engineer, Jarvis (2025)**: J'ai travaillé dans un environnement Agile pour mettre en uvre divers outils de collecte de données et développer mes compétences en SQL, Shell et plus encore. Mise en uvre d'une version dockerisée d'outils d'analyse de systèmes informatiques qui collectaient des informations de manière continue et automatique. 
 
-**Full-stack internship, SOGI (2022)**:  Developed an employee management system for large enterprises through the use of technologies such as React and SQL. Made a responsive interface for managers to interface with. Created database interfacing applets to quickly and easily enter data.
+**Full-stack internship, SOGI (2022)**:  J'ai développé un système de gestion des employés pour les grandes entreprises grâce à l'utilisation de technologies telles que React et SQL. J'ai créé une interface responsive pour que les managers puissent interagir. Création d'applets d'interface de base de données pour saisir rapidement et facilement les données. 
 
 
 ## Education
-**Université de Montréal (2022-2025)**, Bachelor in computer science, Computer science and operational research
+**Université de Montréal (2022-2025)**, Baccalauréat en informatique, Département d'informatique et de recherche opérationelle
 
 
 ## Miscellaneous
-- Cybersecurity club leader
-- Supported students through academic difficulties
-- Participated in Northsec, ICPC, CSGames
-- Part of the administration council of my bachelor's graduate students
+- Président du club de cybersécurité
+- Encadrement d'étudiants lors de problèmes académiques
+- Participation aux CSGames, NorthSec, ICPC
+- Membre du conseil d'administration de l'association de diplomés de mon programme
