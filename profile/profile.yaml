@@ -40,6 +40,10 @@ jarvis_projects:
     # The project description allows hiring managers to understand your project and technologies you used(e.g. programming languages, libraries, algorithms, hardware, tools, etc.).
     # The project description must start with an action verb (https://bit.ly/3guO98u)
     description: " J'ai mis en place d'un programme de surveillance de cluster qui permet à l'utilisateur de voir les informations sur les statistiques de sa machine et de les stocker. Ce projet permet également à l'utilisateur d'obtenir des informations sur l'utilisation de son ordinateur, telles que la mémoire libre, l'E/S et plus encore, en configurant un cronjob qui le consulte toutes les minutes. Ce projet utilisait des commandes shell via des fichiers shell qui demandaient l'exécution de fonctions de collecte d'informations telles que lscpu et les stockaient dans une base de données SQL. "
+  -name: "Java Grep App"
+   git_url: "/java_grep_app"
+   description: "J'ai développé un programme en Java qui permet de faire de la recherche de fichiers en fonction de leur contenu. Ce programme passe au travers de tous les fichier d'un dossier et ce de façon récursive, ce qui lui permet de prendre tout, puis passe à l'intérieur de chaque fichier pour déterminer s'il contient le regex demandé. Si oui, il retourne la ligne dans un fichier à part."
+
 # List of personal or academic projects
 # Feel free to add more projects
 highlighted_projects:
