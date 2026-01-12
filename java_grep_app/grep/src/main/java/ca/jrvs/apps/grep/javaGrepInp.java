@@ -16,7 +16,7 @@ public class javaGrepInp implements JavaGrep {
 
     @Override
     public void process() throws IOException {
-        List<String> matchedLines = Collections.<String>emptyList();
+        List<String> matchedLines = new ArrayList<>(Collections.emptyList());
         String rootDir=getRootPath();
         for(File fichier:listFiles(rootDir)) {
             for (String ligne : readLines(fichier)) {
@@ -31,7 +31,7 @@ public class javaGrepInp implements JavaGrep {
     @Override
     public List<File> listFiles(String rootDir) {
 
-        List<File> files= Collections.<File>emptyList();
+        List<File> files= new ArrayList<>(Collections.emptyList());
         File dir= new File(rootDir);
         Stack<File> stack=new Stack<>();
         stack.push(dir);
@@ -52,7 +52,7 @@ public class javaGrepInp implements JavaGrep {
 
     @Override
     public List<String> readLines(File inputFile) {
-        List<String> ligne=Collections.<String>emptyList();
+        List<String> ligne= new ArrayList<>(Collections.emptyList());
         try(Scanner reader=new Scanner(inputFile)){
             while(reader.hasNextLine()) {
                 ligne.add(reader.nextLine());
@@ -67,7 +67,6 @@ public class javaGrepInp implements JavaGrep {
     @Override
     public boolean containsPattern(String line) {
         String regex=getRegex();
-
         return line.matches(regex);
     }
 
