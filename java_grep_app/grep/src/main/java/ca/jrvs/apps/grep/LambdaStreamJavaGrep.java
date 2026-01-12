@@ -20,7 +20,7 @@ public class LambdaStreamJavaGrep implements JavaGrep {
     public void process() throws IOException {
         List<String> matchedLines = new ArrayList<>();
 
-       
+
         listFiles(rootPath).stream()
                 .flatMap(file -> {
                     try {
@@ -30,7 +30,7 @@ public class LambdaStreamJavaGrep implements JavaGrep {
                         return Stream.empty();
                     }
                 })
-                .forEach(matchedLines::add);       // Collect matched lines
+                .forEach(matchedLines::add);
 
         writeToFiles(matchedLines);
     }
