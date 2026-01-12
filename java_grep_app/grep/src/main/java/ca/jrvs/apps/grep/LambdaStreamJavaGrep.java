@@ -20,9 +20,9 @@ public class LambdaStreamJavaGrep implements JavaGrep {
     public void process() throws IOException {
         List<String> matchedLines = new ArrayList<>();
 
-        // Use Stream to process files and lines
-        listFiles(rootPath).stream()              // Stream<File>
-                .flatMap(file -> {                 // Flatten to Stream<String>
+       
+        listFiles(rootPath).stream()
+                .flatMap(file -> {
                     try {
                         return readLines(file).stream()
                                 .filter(this::containsPattern);
@@ -39,9 +39,9 @@ public class LambdaStreamJavaGrep implements JavaGrep {
     public List<File> listFiles(String rootDir) {
         try (Stream<Path> pathStream = Files.walk(Paths.get(rootDir))) {
             return pathStream
-                    .filter(Files::isRegularFile)     // Keep only regular files
-                    .map(Path::toFile)               // Convert Path to File
-                    .collect(Collectors.toList());   // Collect to List
+                    .filter(Files::isRegularFile)
+                    .map(Path::toFile)
+                    .collect(Collectors.toList());
         } catch (IOException e) {
             return Collections.emptyList();
         }
@@ -58,12 +58,11 @@ public class LambdaStreamJavaGrep implements JavaGrep {
 
     @Override
     public boolean containsPattern(String line) {
-        return line.matches(regex);  // Using regex pattern matching
+        return line.matches(regex);
     }
 
     @Override
     public void writeToFiles(List<String> lines) throws IOException {
-        // Using lambda with try-with-resources
         try (BufferedWriter writer = Files.newBufferedWriter(
                 Paths.get(outFile),
                 StandardOpenOption.CREATE,
