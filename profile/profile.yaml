@@ -16,7 +16,7 @@ skills:
     - Linux/Bash
     - RDBMS/SQL
     - Agile/Scrum
-    - Git
+    - Power BI
     - Pandas/Numpy
   # At least 5 skills
   competent:
@@ -40,6 +40,9 @@ jarvis_projects:
     # The project description allows hiring managers to understand your project and technologies you used(e.g. programming languages, libraries, algorithms, hardware, tools, etc.).
     # The project description must start with an action verb (https://bit.ly/3guO98u)
     description: " J'ai mis en place d'un programme de surveillance de cluster qui permet à l'utilisateur de voir les informations sur les statistiques de sa machine et de les stocker. Ce projet permet également à l'utilisateur d'obtenir des informations sur l'utilisation de son ordinateur, telles que la mémoire libre, l'E/S et plus encore, en configurant un cronjob qui le consulte toutes les minutes. Ce projet utilisait des commandes shell via des fichiers shell qui demandaient l'exécution de fonctions de collecte d'informations telles que lscpu et les stockaient dans une base de données SQL. "
+  - name: "Databricks ETL/DLT"
+    git_url: "/scripts"
+    description: " J'ai créé une pipeline ETL pour des données financières dans Databricks. Pour ce faire, j'ai uploadé un dataset de données financières en utilisant Azure Data Studio, puis j'ai commencé à nettoyer les données. J'ai utilisé le processus Medallion qui consiste en 3 étapes, bronze, argent et or. J'ai enlevé les duplicats, les valeurs nulles et j'ai généralement rendu l'information utilisable pour créer une table argent. Finalement, j'ai combiné ce dataset avec deux autres pour trouver des informations comme le nombre d'utilisateur commetant de la fraude à chaque semaine pour créer les tables or. Un dashboard a aussi été créé pour visualliser les informations des tables or. "
 # List of personal or academic projects
 # Feel free to add more projects
 highlighted_projects:
@@ -59,7 +62,7 @@ professional_experience:
   - title: "Jarvis data engineer"
     company: "Jarvis"
     duration: "2025"
-    description: "J'ai travaillé dans un environnement Agile pour mettre en uvre divers outils de collecte de données et développer mes compétences en SQL, Shell et plus encore. Mise en uvre d'une version dockerisée d'outils d'analyse de systèmes informatiques qui collectaient des informations de manière continue et automatique. "
+    description: "J'ai travaillé dans un environnement Agile pour mettre en oeuvre divers outils de collecte de données et développer mes compétences en SQL, Shell et plus encore. Mise en uvre d'une version dockerisée d'outils d'analyse de systèmes informatiques qui collectaient des informations de manière continue et automatique. "
   - title: "Full-stack internship"
     company: "SOGI"
     duration: "2022"
